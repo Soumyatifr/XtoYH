@@ -213,7 +213,7 @@ defaultJetSequences(process)
 from PhysicsTools.PatUtils.l1PrefiringWeightProducer_cfi import l1PrefiringWeightProducer
 process.prefiringweight = l1PrefiringWeightProducer.clone(
 	TheJets = cms.InputTag("slimmedJets"), #"updatedPatJetsUpdatedJEC"), #this should be the slimmedJets collection with up to date JECs 
-	DataEraECAL = cms.string("None"),
+        DataEraECAL = cms.string("UL2017BtoF"),
 	DataEraMuon = cms.string("20172018"),
 	UseJetEMPt = cms.bool(False),
 	PrefiringRateSystematicUnctyECAL = cms.double(0.2),
