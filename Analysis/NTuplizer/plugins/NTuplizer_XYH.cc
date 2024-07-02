@@ -2022,11 +2022,11 @@ Leptop::analyze(const edm::Event& iEvent, const edm::EventSetup& pset) {
 	
 	  LHE_weight = lheeventinfo->originalXWGTUP();
 	  	 
-	  cout<<"PRINTING all theory weights\n";
+	  //cout<<"PRINTING all theory weights\n";
  
 	  for ( unsigned int index = 0; index < lheeventinfo->weights().size(); ++index ) {	
 		 
-		 cout<<"Index "<<index+1<<" Id "<<lheeventinfo->weights()[index].id<<" weight "<<lheeventinfo->weights()[index].wgt/lheeventinfo->originalXWGTUP()<<endl;//" muR "<<lheeventinfo->weights()[index].MUR<<" muF "<<lheeventinfo->weights()[index].MUF<<" DYN Scale "<<lheeventinfo->weights()[index].DYN_SCALE<<endl;
+		 //cout<<"Index "<<index+1<<" Id "<<lheeventinfo->weights()[index].id<<" weight "<<lheeventinfo->weights()[index].wgt/lheeventinfo->originalXWGTUP()<<endl;//" muR "<<lheeventinfo->weights()[index].MUR<<" muF "<<lheeventinfo->weights()[index].MUF<<" DYN Scale "<<lheeventinfo->weights()[index].DYN_SCALE<<endl;
 		
 		// storing up to a maximum number of weights //
 		

@@ -46,8 +46,6 @@ process.load("PhysicsTools.PatAlgos.selectionLayer1.selectedPatCandidates_cff")
 from RecoJets.Configuration.GenJetParticles_cff import *
 
 process.GlobalTag.globaltag = "106X_mc2017_realistic_v10"
-#106X_upgrade2018_realistic_v15_L1v1"
-#process.GlobalTag.globaltag = "102X_upgrade2018_realistic_v20"
 #process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:mc', '')
 
 ##-------------------- Import the JEC services -----------------------
@@ -242,7 +240,7 @@ process.mcjets =  cms.EDAnalyzer('Leptop',
 	 Data =  cms.untracked.bool(RealData),
 	 MonteCarlo =  cms.untracked.bool(not RealData),
 	 FastSIM =  cms.untracked.bool(FastSIM),
-         YEAR = cms.untracked.int32(2018),
+         YEAR = cms.untracked.int32(2017),
          UltraLegacy =  cms.untracked.bool(True),                        
 	 isReco = cms.untracked.bool(True),
  	 ReRECO = cms.untracked.bool(True),
